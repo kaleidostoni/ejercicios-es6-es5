@@ -1,10 +1,10 @@
-         
-         
-         // ES5
+
+
+// ES5
 
 // declaracion de las variables
 
-var [teachersTeam, members] = [
+/*var [teachersTeam, members] = [
   'formacion',
      ['Amalia',
       'Karla', 
@@ -21,21 +21,23 @@ var formatTeamMessage = function (teachersTeam, members) {
   return message;
 };  
 
-formatTeamMessage(teachersTeam, members);
+formatTeamMessage(teachersTeam, members);*/
 
 // Ahora comenta todo el código anterior y escribelo en ES6
 
 
-                            //  ES6
+//  ES6
 // declaracion de las variables 
 
-// const [teamName, product] = [
-//   'formacion', ['Amalia', 'Karla', 'Silvana', 'Manu', 'Jonh', 'Mike'],
-// ];
+const [teamName, product] = [
+  'formacion', ['Amalia', 'Karla', 'Silvana', 'Manu', 'Jonh', 'Mike'],
+];
 
 
-// const formatTeamMessage = (teamName, people) => {
-//   // escribe tu código en ES6 aqui...
-// }
+const formatTeamMessage = (teamName, people) => {
+  let message = `Hay ${people.length} personas en el equipo de ${teamName}
+  Ellos son ${people}.`
+  console.log(message);
+}
 
-// formatTeamMessage(teamName, product);
+formatTeamMessage(teamName, product);
