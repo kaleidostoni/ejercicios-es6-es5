@@ -35,7 +35,7 @@ const [teamName, product] = [
 
 
 const formatTeamMessage = (teamName, people) => {
-  let message = `Hay ${people.length} personas en el equipo de ${teamName}
+  let message = `Hay ${people.length} personas en el equipo de ${teamName}.
   Ellos son ${people}.`
   console.log(message);
   return message;
