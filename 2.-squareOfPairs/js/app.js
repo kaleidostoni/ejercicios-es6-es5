@@ -4,18 +4,26 @@
 
 // declara las variables ES5
 
-var array = [2, 4, 6];
-// var array = [-3, 2, -8, 12, 5];
-// var array = [1, 2, 3, 4, 5];
+//var array = [2, 4, 6];
+ //var array = [-3, 2, -8, 12, 5];
+ //var array = [1, 2, 3, 4, 5];
 
 
 // declaración de la funcion 
 
-function square () {
-  // escribe tu código aqui...
-}
+/*function square (number) {
+ var evenNumber=array.map(function(num){
+   if(num %2== 0){
+    return num*num;
+   }else{
+     return num
+   }
+ });
+ return evenNumber;
+};
 
-square(array);
+console.log(square(array));*/
+
 
 
                       //  ES6
@@ -24,12 +32,22 @@ square(array);
 
 
 // declara variables (let-const)
-
+//const array = [2, 4, 6];
+ //const array = [-3, 2, -8, 12, 5];
+ const array = [1, 2, 3, 4, 5];
 
 // declara la funcion y ejecuta el código
 
-
-
+const square = number => {
+  let evenNumber = array.map(num =>{
+    if(num%2==0){
+      return num * num;
+    }else{
+      return num
+    }
+  }); return evenNumber;
+}
+ console.log(square(array));
 
 
 
