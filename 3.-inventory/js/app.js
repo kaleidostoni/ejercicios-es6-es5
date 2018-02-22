@@ -50,6 +50,7 @@ const totalByCategory = (inventory,category)=>{
   return filtrando;
 };
 
-//const sumInventory = (prodAnterior,prodActual)=> let base  
-
 totalByCategory(inventory,'beverage');
+
+
+//const sumInventory = (prodAnterior,prodActual)=> let base  
